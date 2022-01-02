@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/age_calculator"
+        android:textColor="@color/textColor"
+        android:textSize="30sp"
+        android:layout_marginTop="35dp"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:textColor="@color/textColor"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_your_dob"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/whiteDark"
+        android:minWidth="150dp"
+        app:cardCornerRadius="5dp">
+
+        <TextView
+            android:id="@+id/ageText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="@color/textColor"
+            android:text="@string/dash"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/your_date_of_birth"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"/>
+
+
+    <TextView
+        android:id="@+id/yearText"
+        android:layout_width="wrap_content"
+        android:textColor="@color/purple_500"
+        android:layout_height="wrap_content"
+        android:text="@string/dash"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"/>
+
+
+
+</LinearLayout>
